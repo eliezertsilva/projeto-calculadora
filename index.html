@@ -8,34 +8,29 @@
     <title>Minha calculadora</title>
 </head>
 <body>
-    <div id="container">
-        <div id="corpo_calc">
-            <div id="result">
-                <input type="text" name="resutado" id="resultado" disabled>
-            </div>
+    <div id="main">
+        <form action="" name="calculadora" id="corpo_calc">
+            <input type="text" name="result" id="result" disabled>
             <div id="btns">
-                <input class="num" type="button" value="7" onclick="num()">
-                <input class="num" type="button" value="8" onclick="num()">
-                <input class="num" type="button" value="9" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
-                <input class="num" type="button" value="" onclick="num()">
+                <input class="num" type="button" name="btn7" value="7" onclick="displaynum(btn7.value)">
+                <input class="num" type="button" name="btn8" value="8" onclick="displaynum(btn8.value)">
+                <input class="num" type="button" name="btn9" value="9" onclick="displaynum(btn9.value)">
+                <input class="num" type="button" name="btn_mult" value="*" onclick="displaynum(btn_mult.value)">
+                <input class="num" type="button" name="btn4" value="4" onclick="displaynum(btn4.value)">
+                <input class="num" type="button" name="btn5" value="5" onclick="displaynum(btn5.value)">
+                <input class="num" type="button" name="btn6" value="6" onclick="displaynum(btn6.value)">
+                <input class="num" type="button" name="btn_sub" value="-" onclick="displaynum(btn_sub.value)">
+                <input class="num" type="button" name="btn1" value="1" onclick="displaynum(btn1.value)">
+                <input class="num" type="button" name="btn2" value="2" onclick="displaynum(btn2.value)">
+                <input class="num" type="button" name="btn3" value="3" onclick="displaynum(btn3.value)">
+                <input class="num" type="button" name="btn_sum" value="+" onclick="displaynum(btn_sum.value)">
+                <input class="num" type="button" name="btn0" value="0" onclick="displaynum(btn0.value)">
+                <input class="num" type="button" name="btn_dot" value="." onclick="displaynum(btn_dot.value)">
+                <input class="num" type="button" name="btn_divide" value="/" onclick="displaynum(btn_divide.value)">
+                <input class="num" type="button" name="btn_calc" value="=" onclick="result.value=eval(result.value)">
             </div>
-        </div>
+        </form><br>
+        <input type="button" name="clear" id="clear" value="Clear" onclick="location.reload();">
     </div>
 
     <script src="script.js"></script>

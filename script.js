@@ -1,5 +1,3 @@
-resultado = document.querySelector('p')
-
-function num(){
-    resultado.innerHTML = ' 8 ';
-}
+function displaynum(n1) {
+    calculadora.result.value = calculadora.result.value + n1; 
+  }
